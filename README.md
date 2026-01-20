@@ -1,1 +1,1 @@
-# kidney-disease-prediction
+# kidney-disease-prediction-DL-project
