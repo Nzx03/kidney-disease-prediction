@@ -23,7 +23,12 @@ list_of_files=[
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
+<<<<<<< HEAD
     "templates/index.html",  #for flask code
+=======
+    "templates/index.html",
+      'test/test.py',  #for flask code
+>>>>>>> 63097cc8e82d0d3accc59d7988abb79c1131a59b
 
  
 ]
