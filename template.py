@@ -23,12 +23,7 @@ list_of_files=[
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-<<<<<<< HEAD
     "templates/index.html",  #for flask code
-=======
-    "templates/index.html",
-      'test/test.py',  #for flask code
->>>>>>> 63097cc8e82d0d3accc59d7988abb79c1131a59b
 
  
 ]
@@ -43,7 +38,7 @@ for filepath in list_of_files:      #for windows OS
         logging.info(f"Creating directory;{filedir} for the file :{filename}")
 
     
-    if (not os.path.exists(filepath))or (os.path.getsize(filepath)==0):
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath)==0):
         with open(filepath,"w") as f:
             pass
             logging.info(f"Creating empty file:{filepath}")
