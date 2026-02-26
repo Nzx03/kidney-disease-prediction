@@ -1,3 +1,13 @@
-from cnnClassifier import logger #without mentioning src as cnnclassifier is treated as a local package
+from cnnClassifier import logger
+from cnnClassifier.pipeline.stage1_data_ingestion import DataIngestionTrainingPipeline
 
-logger.info("welcome to custom code")
+STAGE_NAME= "Data ingestion stage"
+try:
+        logger.info(f"......stage{STAGE_NAME} started .......")
+        obj=DataIngestionTrainingPipeline()
+        obj.main()
+        logger.info(f"......stage{STAGE_NAME}completed.......")
+
+except Exception as e:
+        logger.exception(e)
+        raise e
